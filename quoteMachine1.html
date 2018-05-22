@@ -1,0 +1,104 @@
+<head>
+<style>
+	
+body {
+    background-color: olive;    
+  }
+  
+#btn1 {
+    background-color: white;
+    margin: 50px;
+    border: 100px;
+    padding: 10px;
+    font-size: 10px; 
+    text-align: center;
+    border: 5px solid REd;
+  }
+
+#btn2 {
+    background-color: white;
+    margin: 50px;
+    border: 100px;
+    padding: 10px;
+    font-size: 10px; 
+    text-align: center;
+    border: 5px solid REd;
+  }
+
+ {
+    background-color: white;
+    margin: 50px;
+    border: 100px;
+    padding: 10px;
+    font-size: 50px; 
+    text-align: center;
+    border: 5px solid REd;
+  }
+
+#p1 {
+    background-color: white;
+    margin: 50px;
+    border: 100px;
+    padding: 10px;
+    font-size: 50px; 
+    text-align: center;
+    border-radius: 5px;
+  }
+</style>
+</head>
+<body id="body1">
+<div id="div2" class="container-fluid">
+<p id="p1"> <br>
+  
+</p>
+<button type="button" class="btn btn-primary" id="btn3" onClick="random();">QUOTES!</button>
+  
+
+<br>
+<br>
+  <br>
+  <br>
+
+<a href="https://www.w3schools.com/cssref/css_colors.asp">All the Colors of the CSS Rainbow!</a>
+
+
+<div id="div1">
+  <input type="button" value="CLICK ME NEXT" onClick="new2();" id="btn2">
+  <input type="button" value="CLICK ME!" onClick="new1();" id="btn1">
+ 
+</div>
+</div>
+
+<script>
+function new1() {
+
+document.getElementById("body1").style.backgroundColor = "black";
+var val = prompt("What's your favorite color?");
+document.getElementById("body1").style.backgroundColor = val;
+document.getElementById("p1").innerHTML = arr;
+
+  
+  
+}
+
+function new2() {
+var date = new Date();
+alert(date);
+
+var val = prompt("What type of font? (serif? Sans-Serif? Monospace?)");
+document.getElementById("body").style.fontFamily = val;
+
+}
+
+// document.getElementById("body").value = "This is a new quote";
+  
+
+function random() {
+  var myarray = ["There is nothing permanent except change. -Heraclitus ","You cannot shake hands with a clenched fist. -Gandhi","Learning never exhausts the mind. -Leonardo da Vinci", "All that we see or seem is but a dream within a dream. -Edgar Allan Poe", "If you cannot do great things, do small things in a great way. -Napoleon Hill"];
+  var random = myarray[Math.floor(Math.random() * myarray.length)];
+  var a = Math.floor((Math.random() * 5) + 1);
+  var h = document.getElementById("p1");
+  h.innerHTML = random;     
+}
+</script>
+<body>
